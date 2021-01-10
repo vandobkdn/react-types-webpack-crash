@@ -1,0 +1,16 @@
+.cache/
+coverage/
+public/*
+node_modules/
+*.log
+*.lock
+.idea/*
+package-lock.json
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
