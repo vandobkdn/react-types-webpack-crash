@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -44,7 +45,8 @@ module.exports = {
             '.jsx',
             '.tsx',
             '.ts'
-        ]
+        ],
+        plugins: [new TsConfigPathsPlugin()]
     },
     plugins: [
         new HtmlWebpackPlugin({
