@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: '[name].bundle.js',
+        filename: '[name].[contenthash].bundle.js'
     },
     devServer: {
         port: 3000,
