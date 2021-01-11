@@ -1,5 +1,4 @@
 const { merge } = require('webpack-merge');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 const path = require('path');
 const common = require('./webpack.common.js');
 
@@ -13,11 +12,10 @@ module.exports = merge(common, {
     devServer: {
         port: 4200,
         proxy: {
-            '/api':
-            createProxyMiddleware({
+            '/api': {
                 target: 'http://localhost:8090',
                 changeOrigin: true,
-            })
+            }
         }
     },
 });
