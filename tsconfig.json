@@ -7,20 +7,19 @@
       "esnext"
     ],
     "baseUrl": "src",
-    "outDir": "./public/",
     "sourceMap": true,
     "strict": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "module": "esnext",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
     "allowJs": true,
     "jsx": "react",
     "noImplicitThis": true,
     "strictNullChecks": true
   },
   "include": [
-    "./src/**/*"
+    "src"
   ]
 }

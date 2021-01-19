@@ -7,7 +7,7 @@ import theme from "./theme";
 const App = () => {
     const theme = useTheme();
     return (
-        <h1 style={{backgroundColor: theme.palette.primary.main}}>{process.env.NODE_ENV}</h1>
+        <h1 style={{backgroundColor: theme.palette.primary.main}}>{process.env.APP_TITLE}</h1>
     )
 }
 
